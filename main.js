@@ -193,14 +193,7 @@ chrome.alarms.onAlarm.addListener(function(alarm) {
 
 chrome.browserAction.onClicked.addListener(function (tab) {
     chrome.extension.getBackgroundPage().console.log(updateCalendar());
-	let opt = {
-							type: "basic",
-							title: "asdasdsd",
-							message: "New episode has been released on 9Anime!",
-							iconUrl: "https://9anime.to/favicons/favicon.png",
-							requireInteraction: true
-						};
-						Notification.display("https://9anime.to/favicons/favicon.png", opt);
+	alert("9Anime Notifier is already running!")
 });
 
 chrome.notifications.onClicked.addListener(function (notificationId) {
