@@ -1,0 +1,29 @@
+{
+ "background": {
+	"scripts": ["moment.min.js", "jquery-3.2.1.min.js", "main.js"],
+	"persistent": true
+ },
+ "browser_action": {
+ "default_icon": "icon-128.png",
+ "default_title": "9Anime Notifier"
+ },
+ "name": "9Anime Notifier",
+ "description": "9Anime Notifier notifies you for new episode updates on 9Anime.",
+ "homepage_url": "http://www.9anime.to/",
+ "icons": {
+     "16": "icon-16.png",
+     "48": "icon-48.png",
+     "128": "icon-128.png" },
+ "permissions": [
+     "tabs",
+     "http://*/*",
+     "https://*/*",
+	 "storage",
+	 "alarms",
+	 "notifications",
+	 "background",
+	 "unlimitedStorage"
+ ],
+ "version": "1.0",
+ "manifest_version": 2
+}
